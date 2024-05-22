@@ -102,10 +102,10 @@ main{
     align-content: center;
 }
 
-.left{
+.hero .left{
     margin-left: 50px;
 }
-.right{
+.hero .right{
     margin-right: 50px;
 }
 
@@ -168,14 +168,16 @@ main{
     animation-play-state: paused; /* Pauses animation on hover */
 }
 
-.what_we_do h5{
+section h5{
     color: #20B15A;
     margin: 50px 0 15px 50px;
+    font-size: 20px;
 }
 
-.what_we_do h3{
+section h3{
     margin-bottom: 40px;
     margin: 0 0 50px 50px;
+    font-size: 30px;
 }
 
 .card {
@@ -226,12 +228,12 @@ main{
     margin-left: 5px; /* Add margin to create space between text and icon */
 }
 
-.card:hover {
+.card:hover, .p-card:hover {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Increased shadow on hover */
     transform: translateY(-2px); /* Lifted on hover */
 }
 
-.card:active {
+.card:active, .p-card:active {
     transform: translateY(1px); /* Slightly pushed on click */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
 }
@@ -240,4 +242,91 @@ main{
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to next row */
     justify-content: space-evenly; /* Center cards horizontally */
+    margin-bottom: 200px;
 }
+
+/* styles.css */
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+    width: 240px;
+    margin: 10px 0; /* Add margin to create space between stats */
+}
+
+.stat img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.stat h1 {
+    font-size: 40px;
+    color: #20B15A;
+    text-align: center;
+}
+
+.divider {
+    width: 2px;
+    background-color: #ececec;
+    margin: 0 20px; /* Adjust margin as needed */
+    height: 200px;
+}
+
+.p-card {
+    width: 100%;
+    max-width: 500px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    margin: 8px;
+}
+
+.p-card img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.p-card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.p-card p {
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 50px;
+}
+
+.p-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 30px;
+}
+
+.p-cards .left, .p-cards .right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: fit-content; 
+}
+

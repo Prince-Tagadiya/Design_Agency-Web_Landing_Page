@@ -17,3 +17,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adjust the width of the slider track after duplication
     sliderTrack.style.width = `calc(100% * ${numSlides * 2})`;
 });
+
+
